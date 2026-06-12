@@ -1,0 +1,17 @@
+{
+  "default": "win",
+  "variants": {
+    "win": {
+      "label": "胜利版",
+      "boss": { "level": 8, "immune": false, "maxHp": 40, "contactPlayerDamage": 4, "contactBossDamage": 14 },
+      "outcome": "win",
+      "end": { "title": "进化胜利！", "subtitle": "你已成为岛屿霸主", "buttonLabel": "进入下一关" }
+    },
+    "lose": {
+      "label": "失败版",
+      "boss": { "level": null, "immune": true, "maxHp": 100, "contactPlayerDamage": 60, "contactBossDamage": 2 },
+      "outcome": "lose",
+      "end": { "title": "惜败强敌…", "subtitle": "变得更强，才能反杀它", "buttonLabel": "再来一次" }
+    }
+  }
+}

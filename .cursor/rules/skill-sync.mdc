@@ -1,0 +1,16 @@
+---
+description: 当用户提到同步、拉取、推送、差异、对比、更新（SKILL/开发包/工具包）时触发
+globs: 
+alwaysApply: false
+---
+
+# 开发包同步
+
+同步范围：skills + rules + vite.config + config-editor 工具 + 脚本。
+
+当用户提到以下关键词时，直接执行对应命令，无需额外确认：
+
+- 「更新开发包」「update」→ 执行 `node .cursor/sync.mjs update`（git pull → install → 同步）
+- 「同步」「拉取」「pull」→ 执行 `node .cursor/sync.mjs pull`
+- 「推送」「push」→ 执行 `node .cursor/sync.mjs push`
+- 「差异」「对比」「diff」→ 执行 `node .cursor/sync.mjs diff`

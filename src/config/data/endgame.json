@@ -1,0 +1,18 @@
+{
+  "triggerLevel": 12,
+  "intro": {
+    "subtitleDelayMs": 1000,
+    "othersShrinkRatio": 0.5,
+    "panDurationMs": 1800,
+    "title": "远古双子泰坦降临"
+  },
+  "contact": {
+    "range": 3.2,
+    "intervalSec": 0.5,
+    "knockback": 6
+  },
+  "titans": [
+    { "id": "purple", "name": "虚空泰坦", "body": "0x7a3aff", "accent": "0x3a1f6a", "scale": 4.2, "edible": true },
+    { "id": "red", "name": "炼狱泰坦", "body": "0xd0322f", "accent": "0x6a1410", "scale": 4.6, "edible": false }
+  ]
+}

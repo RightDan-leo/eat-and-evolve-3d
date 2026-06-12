@@ -1,0 +1,24 @@
+---
+description: 修改 config JSON 时必须同步 schemas.ts
+globs:
+  - "src/config/data/**"
+---
+
+# Config Schema 同步（MUST）
+
+当你创建或修改 `src/config/data/*.json` 的字段结构（增删或重命名字段）时，**必须在同一轮操作中**同步更新 `tools/config-editor/schemas.ts`。
+
+## 检查清单
+
+- [ ] 新增 JSON 文件 → schemas.ts 中添加完整 schema 定义
+- [ ] 新增字段 → schemas.ts 对应 schema 添加 field 条目
+- [ ] 删除字段 → schemas.ts 删除对应条目
+- [ ] 重命名字段 → schemas.ts 更新对应 `path`
+
+## 不需要同步的情况
+
+- 仅修改字段的值（不改结构）
+
+## Schema 格式
+
+读取 `config-editor` SKILL 了解字段类型和写法。

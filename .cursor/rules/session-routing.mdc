@@ -1,0 +1,16 @@
+---
+description: 当用户提到继续开发、查看项目状态、结束 session、今天先到这、部署游戏、发布、deploy、让别人玩时触发
+globs: 
+alwaysApply: false
+---
+
+# Session 与部署路由
+
+## Session 管理
+
+- 用户说「继续游戏开发」「查看项目状态」→ 读取 `web-game-dev` SKILL，按其 Session 管理流程执行
+- 用户说「更新项目状态」「今天先到这」→ 读取 `web-game-dev` SKILL，按其 Session 结束流程执行
+
+## 部署
+
+- 用户说「部署游戏」「发布到服务器」「deploy」「让别人玩」→ 读取 `server-deploy` SKILL，按其执行流程操作

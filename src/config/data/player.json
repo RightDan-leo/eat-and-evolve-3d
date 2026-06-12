@@ -1,0 +1,18 @@
+{
+  "sizeByLevel": [
+    { "level": 1, "scale": 1.0 },
+    { "level": 15, "scale": 2.0 },
+    { "level": 50, "scale": 4.0 },
+    { "level": 185, "scale": 8.0 },
+    { "level": 405, "scale": 14.0 }
+  ],
+  "moveSpeedByLevel": [
+    { "level": 1, "speed": 6 },
+    { "level": 50, "speed": 12 },
+    { "level": 405, "speed": 26 }
+  ],
+  "joystick": {
+    "radius": 64,
+    "deadZone": 6
+  }
+}

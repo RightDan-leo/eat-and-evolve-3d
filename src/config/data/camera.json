@@ -1,0 +1,14 @@
+{
+  "byLevel": [
+    { "level": 1, "distance": 8, "height": 11 },
+    { "level": 15, "distance": 14, "height": 19 },
+    { "level": 50, "distance": 26, "height": 35 },
+    { "level": 185, "distance": 45, "height": 60 },
+    { "level": 405, "distance": 68, "height": 92 }
+  ],
+  "rig": {
+    "followLerp": 6,
+    "zoomLerp": 2.5,
+    "pixelRatioCap": 2
+  }
+}

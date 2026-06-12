@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Config Editor</title>
+  <link rel="stylesheet" href="/__config/style.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header id="topbar">
+    <div class="topbar-left">
+      <span class="topbar-logo">⚡</span>
+      <h1>Config Editor</h1>
+    </div>
+    <div class="topbar-right">
+      <span id="status" class="status"></span>
+      <button id="btn-reset" class="btn btn-secondary" disabled>重置</button>
+      <button id="btn-save" class="btn btn-primary" disabled>保存</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <nav id="sidebar"></nav>
+    <section id="panel">
+      <div class="panel-empty">选择左侧分类开始编辑</div>
+    </section>
+  </main>
+
+  <div id="asset-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="modal-title"></span>
+        <button class="modal-close" title="关闭">✕</button>
+      </div>
+      <div id="modal-body"></div>
+      <div class="modal-footer">
+        <span id="modal-info" class="modal-info"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script type="module" src="/__config/app.js"></script>
+</body>
+</html>

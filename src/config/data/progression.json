@@ -1,0 +1,9 @@
+{
+  "minLevel": 1,
+  "maxLevel": 405,
+  "expToNext": { "base": 3, "perLevel": 0.9 },
+  "expReward": { "base": 2, "perEnemyLevel": 0.25, "highBonusPerDiff": 0.35, "lowPenaltyPerDiff": 0.15, "minLowFactor": 0.4 },
+  "playerHp": { "base": 50, "perLevel": 6 },
+  "enemyHp": { "base": 12, "perLevel": 4 },
+  "enemyContactDamage": { "base": 8, "perLevel": 1.2 }
+}

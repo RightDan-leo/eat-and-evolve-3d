@@ -1,0 +1,22 @@
+{
+  "forms": [
+    { "level": 1, "name": "幼兽", "body": "0x3b82f6", "accent": "0x1e40af", "tier": 0, "branch": [] },
+    {
+      "level": 15, "name": "元素幼龙", "body": "0x4fb6d8", "accent": "0x2b6f8a", "tier": 1,
+      "branch": [
+        { "id": "water", "name": "水之龙", "element": "水", "body": "0x3ba7e0", "accent": "0x1c5f8a", "speedMul": 1.0, "reachMul": 1.15 },
+        { "id": "nature", "name": "自然龙", "element": "自然", "body": "0x57c873", "accent": "0x2e8b57", "speedMul": 1.1, "reachMul": 1.0 },
+        { "id": "fire", "name": "烈焰龙", "element": "火", "body": "0xe0612f", "accent": "0x8a2a12", "speedMul": 1.05, "reachMul": 1.08 }
+      ]
+    },
+    { "level": 50, "name": "成年飞龙", "body": "0x6c5ce0", "accent": "0x35257a", "tier": 2, "branch": [] },
+    {
+      "level": 150, "name": "巨龙", "body": "0xca8a3a", "accent": "0x7a5018", "tier": 3,
+      "branch": [
+        { "id": "storm", "name": "风暴巨龙", "element": "雷", "body": "0x9b6cf0", "accent": "0x5a35a8", "speedMul": 1.12, "reachMul": 1.1 },
+        { "id": "iron", "name": "钢铁巨龙", "element": "铁", "body": "0x8a8f98", "accent": "0x4a4f58", "speedMul": 0.95, "reachMul": 1.3 }
+      ]
+    },
+    { "level": 300, "name": "太古龙", "body": "0xf1c40f", "accent": "0xe04a2f", "tier": 4, "branch": [] }
+  ]
+}

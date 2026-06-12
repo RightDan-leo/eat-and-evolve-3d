@@ -1,0 +1,39 @@
+{
+  "arena": {
+    "islandRadius": 110,
+    "coreRadius": 32,
+    "midRadius": 70,
+    "difficulty": { "edgeLevel": 1, "centerLevel": 10, "jitter": 1 }
+  },
+  "spawn": {
+    "maxAlive": 64,
+    "spawnRadiusMin": 10,
+    "spawnRadiusMax": 56,
+    "recycleRadius": 78,
+    "centerLeadMax": 2,
+    "maxLeadAbovePlayer": 2,
+    "levelWeights": [
+      { "offset": -3, "weight": 0.24 },
+      { "offset": -2, "weight": 0.26 },
+      { "offset": -1, "weight": 0.24 },
+      { "offset": 0, "weight": 0.14 },
+      { "offset": 1, "weight": 0.08 },
+      { "offset": 2, "weight": 0.04 }
+    ],
+    "starterPrey": { "count": 22, "spread": 22, "minRadius": 4 }
+  },
+  "chests": {
+    "count": 5,
+    "radius": 2.2,
+    "baseExp": 6,
+    "centerBonusExp": 18,
+    "respawnDelayMs": 9000,
+    "channelMs": 2000
+  },
+  "env": {
+    "trees": 90,
+    "rocks": 40,
+    "mountains": 28,
+    "beacon": true
+  }
+}

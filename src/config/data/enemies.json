@@ -1,0 +1,28 @@
+{
+  "chaseGiveUp": 40,
+  "size": {
+    "sameOrLowerMaxRatio": 0.9,
+    "higherMinRatio": 1.15,
+    "scaleByDiff": [
+      { "diff": -5, "scale": 0.2 },
+      { "diff": -4, "scale": 0.3 },
+      { "diff": -3, "scale": 0.4 },
+      { "diff": -2, "scale": 0.5 },
+      { "diff": -1, "scale": 0.6 },
+      { "diff": 0, "scale": 0.65 },
+      { "diff": 1, "scale": 1.25 },
+      { "diff": 2, "scale": 1.5 },
+      { "diff": 3, "scale": 1.75 },
+      { "diff": 4, "scale": 2.0 },
+      { "diff": 5, "scale": 2.3 }
+    ]
+  },
+  "kinds": {
+    "blob":    { "shape": "blob",    "body": "0x8fd14f", "accent": "0x5a8a2e", "sizeFactor": 0.9,  "chaser": false, "speed": 0, "aggro": 0 },
+    "critter": { "shape": "critter", "body": "0xd96b8a", "accent": "0x8a3a52", "sizeFactor": 1.0,  "chaser": false, "speed": 0, "aggro": 0 },
+    "beast":   { "shape": "beast",   "body": "0xe0a23a", "accent": "0x8a5e18", "sizeFactor": 1.1,  "chaser": true,  "speed": 6, "aggro": 16 },
+    "brute":   { "shape": "brute",   "body": "0xd0512f", "accent": "0x7a2412", "sizeFactor": 1.25, "chaser": true,  "speed": 8, "aggro": 22 },
+    "wyrm":    { "shape": "wyrm",    "body": "0x9b4fd0", "accent": "0x5a2a8a", "sizeFactor": 1.4,  "chaser": true,  "speed": 9, "aggro": 28 }
+  },
+  "levelToKind": ["blob", "blob", "critter", "critter", "critter", "beast", "beast", "beast", "brute", "brute"]
+}

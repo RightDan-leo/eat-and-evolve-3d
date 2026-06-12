@@ -1,0 +1,16 @@
+{
+  "devour": {
+    "chunkCount": 7,
+    "burstSpeed": 4.5,
+    "burstHold": 0.12,
+    "homeSpeed": 14,
+    "pulseScale": 0.18,
+    "chunkColor": "0xd96b8a"
+  },
+  "evolution": {
+    "ringColor": "0xffe14d",
+    "ringDuration": 0.7,
+    "ringMaxRadius": 4.0,
+    "punchScale": 0.35
+  }
+}

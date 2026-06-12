@@ -1,0 +1,26 @@
+{
+  "executeDelta": 2,
+  "hopelessDelta": -2,
+  "contactCooldown": 0.42,
+  "playerDamageFractions": {
+    "dominant": 1.0,
+    "advantage": 1.0,
+    "even": 1.0,
+    "disadvantage": 0.14,
+    "hopeless": 0.06
+  },
+  "counterDamageFactors": {
+    "dominant": 0.0,
+    "advantage": 0.0,
+    "even": 0.0,
+    "disadvantage": 0.7,
+    "hopeless": 1.0
+  },
+  "relationColors": {
+    "dominant": "0x4dff7a",
+    "advantage": "0x4dff7a",
+    "even": "0x4dff7a",
+    "disadvantage": "0xff4d4d",
+    "hopeless": "0xff4d4d"
+  }
+}
