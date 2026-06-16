@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 24px;
+        padding: 32px 20px;
         text-align: center;
       }
       h1 {
@@ -28,40 +28,56 @@
         text-shadow: 0 4px 24px rgba(64, 140, 255, 0.45);
       }
       .sub { margin-top: 10px; color: #9fc0ee; font-size: clamp(14px, 3vw, 18px); }
-      .cards { margin-top: 40px; display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+      .group { margin-top: 36px; width: 100%; max-width: 760px; }
+      .group h2 {
+        font-size: clamp(16px, 3.4vw, 22px);
+        font-weight: 800;
+        color: #cfe3ff;
+        margin-bottom: 14px;
+      }
+      .group.easy h2 { color: #bff7cf; }
+      .cards { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
       a.card {
         display: block;
         text-decoration: none;
         color: #0a1326;
-        background: linear-gradient(90deg, #6fd0ff, #79ffb0);
-        padding: 22px 46px;
-        border-radius: 18px;
-        font-size: 22px;
+        padding: 18px 38px;
+        border-radius: 16px;
+        font-size: 20px;
         font-weight: 800;
-        box-shadow: 0 10px 30px rgba(60, 180, 255, 0.35);
-        transition: transform 0.15s, box-shadow 0.15s;
+        min-width: 200px;
+        transition: transform .15s ease, box-shadow .15s ease;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, .45);
       }
-      a.card .flag { font-size: 30px; display: block; margin-bottom: 4px; }
-      a.card:hover { transform: translateY(-4px) scale(1.04); box-shadow: 0 16px 40px rgba(60, 180, 255, 0.5); }
-      .foot { margin-top: 46px; color: #5f739a; font-size: 13px; }
+      a.card .tag { display: block; font-size: 13px; font-weight: 600; opacity: .7; margin-top: 4px; }
+      .hard a.card { background: linear-gradient(90deg, #6fd0ff, #79b8ff); }
+      .easy a.card { background: linear-gradient(90deg, #7be08a, #3fcf8e); }
+      a.card:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 16px 36px rgba(0, 0, 0, .55); }
+      .foot { margin-top: 40px; color: #6f86ad; font-size: 13px; }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <h1>Devour Evolution Isle</h1>
-      <div class="sub">吞噬进化岛 · Eat, evolve, and avenge yourself against the Ancient Titan.</div>
-      <div class="cards">
-        <a class="card" href="./en/"><span class="flag">🇬🇧</span>Play in English</a>
-        <a class="card" href="./zh/"><span class="flag">🇨🇳</span>中文版开玩</a>
+      <h1>吞噬进化岛 · Devour Evolution Isle</h1>
+      <div class="sub">吞噬进化，烈焰反扑，击溃远古巨兽 · Devour, evolve, and crush the Ancient Titan</div>
+
+      <div class="group hard">
+        <h2>🔥 困难版 / Hard（巨兽无敌，必败投放结构）</h2>
+        <div class="cards">
+          <a class="card" href="./zh/">中文版<span class="tag">Hard · 简体中文</span></a>
+          <a class="card" href="./en/">English<span class="tag">Hard · English</span></a>
+        </div>
       </div>
-      <div class="foot">Tap a card to start · 点击卡片开始游戏</div>
+
+      <div class="group easy">
+        <h2>🌿 简单版 / Easy（远程火焰可击败巨兽取胜）</h2>
+        <div class="cards">
+          <a class="card" href="./easy/zh/">中文版<span class="tag">Easy · 简体中文</span></a>
+          <a class="card" href="./easy/en/">English<span class="tag">Easy · English</span></a>
+        </div>
+      </div>
+
+      <div class="foot">拖动屏幕移动 · 吞噬升级 · Lv5 解锁烈焰喷射 / Drag to move · devour to evolve</div>
     </div>
-    <script>
-      // 按浏览器语言把更可能的版本排在前面（仅视觉提示，用户仍可自由选择）
-      if ((navigator.language || '').toLowerCase().startsWith('zh')) {
-        var cards = document.querySelector('.cards');
-        cards.insertBefore(cards.children[1], cards.children[0]);
-      }
-    </script>
   </body>
 </html>
